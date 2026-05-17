@@ -1,0 +1,19 @@
+# Środowisko wirtualne (venv)
+venv/
+ENV/
+env/
+.env
+
+data/*
+!data/.gitkeep
+
+# Pliki Pythona i IDE
+__pycache__/
+*.py[cod]
+*$py.class
+.vscode/
+.idea/
+
+# Pliki systemowe
+.DS_Store
+Thumbs.db

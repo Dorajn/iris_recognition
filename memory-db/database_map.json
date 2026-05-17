@@ -1,0 +1,505 @@
+{
+    "authorized_users": [
+        {
+            "user_id": "000",
+            "template_file": "000_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/000/L/S5000L00.jpg"
+        },
+        {
+            "user_id": "001",
+            "template_file": "001_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/001/L/S5001L00.jpg"
+        },
+        {
+            "user_id": "002",
+            "template_file": "002_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/002/L/S5002L00.jpg"
+        },
+        {
+            "user_id": "003",
+            "template_file": "003_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/003/L/S5003L00.jpg"
+        },
+        {
+            "user_id": "004",
+            "template_file": "004_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/004/L/S5004L00.jpg"
+        },
+        {
+            "user_id": "005",
+            "template_file": "005_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/005/L/S5005L00.jpg"
+        },
+        {
+            "user_id": "006",
+            "template_file": "006_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/006/L/S5006L00.jpg"
+        },
+        {
+            "user_id": "007",
+            "template_file": "007_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/007/L/S5007L00.jpg"
+        },
+        {
+            "user_id": "011",
+            "template_file": "011_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/011/L/S5011L00.jpg"
+        },
+        {
+            "user_id": "012",
+            "template_file": "012_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/012/L/S5012L00.jpg"
+        },
+        {
+            "user_id": "013",
+            "template_file": "013_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/013/L/S5013L00.jpg"
+        },
+        {
+            "user_id": "014",
+            "template_file": "014_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/014/L/S5014L00.jpg"
+        },
+        {
+            "user_id": "015",
+            "template_file": "015_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/015/L/S5015L00.jpg"
+        },
+        {
+            "user_id": "016",
+            "template_file": "016_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/016/L/S5016L00.jpg"
+        },
+        {
+            "user_id": "017",
+            "template_file": "017_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/017/L/S5017L00.jpg"
+        },
+        {
+            "user_id": "018",
+            "template_file": "018_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/018/L/S5018L00.jpg"
+        },
+        {
+            "user_id": "022",
+            "template_file": "022_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/022/L/S5022L00.jpg"
+        },
+        {
+            "user_id": "023",
+            "template_file": "023_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/023/L/S5023L00.jpg"
+        },
+        {
+            "user_id": "024",
+            "template_file": "024_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/024/L/S5024L00.jpg"
+        },
+        {
+            "user_id": "025",
+            "template_file": "025_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/025/L/S5025L00.jpg"
+        },
+        {
+            "user_id": "026",
+            "template_file": "026_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/026/L/S5026L00.jpg"
+        },
+        {
+            "user_id": "027",
+            "template_file": "027_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/027/L/S5027L00.jpg"
+        },
+        {
+            "user_id": "028",
+            "template_file": "028_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/028/L/S5028L00.jpg"
+        },
+        {
+            "user_id": "029",
+            "template_file": "029_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/029/L/S5029L00.jpg"
+        },
+        {
+            "user_id": "033",
+            "template_file": "033_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/033/L/S5033L00.jpg"
+        },
+        {
+            "user_id": "034",
+            "template_file": "034_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/034/L/S5034L00.jpg"
+        },
+        {
+            "user_id": "035",
+            "template_file": "035_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/035/L/S5035L00.jpg"
+        },
+        {
+            "user_id": "036",
+            "template_file": "036_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/036/L/S5036L00.jpg"
+        },
+        {
+            "user_id": "037",
+            "template_file": "037_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/037/L/S5037L00.jpg"
+        },
+        {
+            "user_id": "038",
+            "template_file": "038_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/038/L/S5038L00.jpg"
+        },
+        {
+            "user_id": "039",
+            "template_file": "039_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/039/L/S5039L00.jpg"
+        },
+        {
+            "user_id": "040",
+            "template_file": "040_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/040/L/S5040L00.jpg"
+        },
+        {
+            "user_id": "044",
+            "template_file": "044_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/044/L/S5044L00.jpg"
+        },
+        {
+            "user_id": "045",
+            "template_file": "045_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/045/L/S5045L00.jpg"
+        },
+        {
+            "user_id": "046",
+            "template_file": "046_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/046/L/S5046L00.jpg"
+        },
+        {
+            "user_id": "047",
+            "template_file": "047_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/047/L/S5047L00.jpg"
+        },
+        {
+            "user_id": "048",
+            "template_file": "048_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/048/L/S5048L00.jpg"
+        },
+        {
+            "user_id": "049",
+            "template_file": "049_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/049/L/S5049L00.jpg"
+        },
+        {
+            "user_id": "050",
+            "template_file": "050_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/050/L/S5050L00.jpg"
+        },
+        {
+            "user_id": "051",
+            "template_file": "051_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/051/L/S5051L00.jpg"
+        },
+        {
+            "user_id": "055",
+            "template_file": "055_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/055/L/S5055L00.jpg"
+        },
+        {
+            "user_id": "056",
+            "template_file": "056_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/056/L/S5056L00.jpg"
+        },
+        {
+            "user_id": "057",
+            "template_file": "057_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/057/L/S5057L00.jpg"
+        },
+        {
+            "user_id": "058",
+            "template_file": "058_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/058/L/S5058L00.jpg"
+        },
+        {
+            "user_id": "059",
+            "template_file": "059_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/059/L/S5059L00.jpg"
+        },
+        {
+            "user_id": "060",
+            "template_file": "060_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/060/L/S5060L00.jpg"
+        },
+        {
+            "user_id": "061",
+            "template_file": "061_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/061/L/S5061L00.jpg"
+        },
+        {
+            "user_id": "062",
+            "template_file": "062_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/062/L/S5062L00.jpg"
+        },
+        {
+            "user_id": "066",
+            "template_file": "066_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/066/L/S5066L00.jpg"
+        },
+        {
+            "user_id": "067",
+            "template_file": "067_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/067/L/S5067L00.jpg"
+        },
+        {
+            "user_id": "068",
+            "template_file": "068_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/068/L/S5068L00.jpg"
+        },
+        {
+            "user_id": "069",
+            "template_file": "069_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/069/L/S5069L00.jpg"
+        },
+        {
+            "user_id": "070",
+            "template_file": "070_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/070/L/S5070L00.jpg"
+        },
+        {
+            "user_id": "071",
+            "template_file": "071_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/071/L/S5071L00.jpg"
+        },
+        {
+            "user_id": "072",
+            "template_file": "072_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/072/L/S5072L00.jpg"
+        },
+        {
+            "user_id": "073",
+            "template_file": "073_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/073/L/S5073L00.jpg"
+        },
+        {
+            "user_id": "077",
+            "template_file": "077_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/077/L/S5077L00.jpg"
+        },
+        {
+            "user_id": "078",
+            "template_file": "078_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/078/L/S5078L00.jpg"
+        },
+        {
+            "user_id": "079",
+            "template_file": "079_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/079/L/S5079L00.jpg"
+        },
+        {
+            "user_id": "080",
+            "template_file": "080_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/080/L/S5080L00.jpg"
+        },
+        {
+            "user_id": "081",
+            "template_file": "081_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/081/L/S5081L00.jpg"
+        },
+        {
+            "user_id": "082",
+            "template_file": "082_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/082/L/S5082L00.jpg"
+        },
+        {
+            "user_id": "083",
+            "template_file": "083_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/083/L/S5083L00.jpg"
+        },
+        {
+            "user_id": "084",
+            "template_file": "084_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/084/L/S5084L00.jpg"
+        },
+        {
+            "user_id": "088",
+            "template_file": "088_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/088/L/S5088L00.jpg"
+        },
+        {
+            "user_id": "089",
+            "template_file": "089_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/089/L/S5089L00.jpg"
+        },
+        {
+            "user_id": "090",
+            "template_file": "090_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/090/L/S5090L00.jpg"
+        },
+        {
+            "user_id": "091",
+            "template_file": "091_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/091/L/S5091L00.jpg"
+        },
+        {
+            "user_id": "092",
+            "template_file": "092_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/092/L/S5092L00.jpg"
+        },
+        {
+            "user_id": "093",
+            "template_file": "093_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/093/L/S5093L00.jpg"
+        },
+        {
+            "user_id": "094",
+            "template_file": "094_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/094/L/S5094L00.jpg"
+        },
+        {
+            "user_id": "095",
+            "template_file": "095_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/095/L/S5095L00.jpg"
+        },
+        {
+            "user_id": "099",
+            "template_file": "099_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/099/L/S5099L00.jpg"
+        },
+        {
+            "user_id": "100",
+            "template_file": "100_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/100/L/S5100L00.jpg"
+        },
+        {
+            "user_id": "101",
+            "template_file": "101_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/101/L/S5101L00.jpg"
+        },
+        {
+            "user_id": "102",
+            "template_file": "102_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/102/L/S5102L00.jpg"
+        },
+        {
+            "user_id": "103",
+            "template_file": "103_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/103/L/S5103L00.jpg"
+        },
+        {
+            "user_id": "104",
+            "template_file": "104_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/104/L/S5104L00.jpg"
+        },
+        {
+            "user_id": "105",
+            "template_file": "105_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/105/L/S5105L00.jpg"
+        },
+        {
+            "user_id": "106",
+            "template_file": "106_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/106/L/S5106L00.jpg"
+        },
+        {
+            "user_id": "110",
+            "template_file": "110_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/110/L/S5110L00.jpg"
+        },
+        {
+            "user_id": "111",
+            "template_file": "111_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/111/L/S5111L00.jpg"
+        },
+        {
+            "user_id": "112",
+            "template_file": "112_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/112/L/S5112L00.jpg"
+        },
+        {
+            "user_id": "113",
+            "template_file": "113_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/113/L/S5113L00.jpg"
+        },
+        {
+            "user_id": "114",
+            "template_file": "114_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/114/L/S5114L00.jpg"
+        },
+        {
+            "user_id": "115",
+            "template_file": "115_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/115/L/S5115L00.jpg"
+        },
+        {
+            "user_id": "116",
+            "template_file": "116_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/116/L/S5116L00.jpg"
+        },
+        {
+            "user_id": "117",
+            "template_file": "117_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/117/L/S5117L00.jpg"
+        },
+        {
+            "user_id": "121",
+            "template_file": "121_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/121/L/S5121L00.jpg"
+        },
+        {
+            "user_id": "122",
+            "template_file": "122_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/122/L/S5122L00.jpg"
+        },
+        {
+            "user_id": "123",
+            "template_file": "123_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/123/L/S5123L00.jpg"
+        },
+        {
+            "user_id": "124",
+            "template_file": "124_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/124/L/S5124L00.jpg"
+        },
+        {
+            "user_id": "125",
+            "template_file": "125_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/125/L/S5125L00.jpg"
+        },
+        {
+            "user_id": "126",
+            "template_file": "126_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/126/L/S5126L00.jpg"
+        },
+        {
+            "user_id": "127",
+            "template_file": "127_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/127/L/S5127L00.jpg"
+        },
+        {
+            "user_id": "128",
+            "template_file": "128_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/128/L/S5128L00.jpg"
+        },
+        {
+            "user_id": "132",
+            "template_file": "132_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/132/L/S5132L00.jpg"
+        },
+        {
+            "user_id": "133",
+            "template_file": "133_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/133/L/S5133L00.jpg"
+        },
+        {
+            "user_id": "134",
+            "template_file": "134_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/134/L/S5134L00.jpg"
+        },
+        {
+            "user_id": "135",
+            "template_file": "135_L.npy",
+            "original_image": "/home/dorian/Dokumenty/studia/iris_recognition/data/135/L/S5135L00.jpg"
+        }
+    ],
+    "threshold": 0.41
+}
