@@ -16,7 +16,7 @@ def run_evaluation_USERS(base_data_path, users_limit=150):
     total_attempts = 0
     
     all_folders = sorted([f for f in os.listdir(base_data_path) if os.path.isdir(os.path.join(base_data_path, f))])
-    user_folders = all_folders[:users_limit]
+    user_folders = all_folders[150:users_limit + users_limit]
 
     print(f"Rozpoczynam ewaluację dla {len(user_folders)} potencjalnych użytkowników...\n")
     print(f"{'User':<10} | {'Status':<15} | {'Dystans':<10} | {'Wynik'}")
@@ -84,7 +84,7 @@ def run_evaluation_IMPOSTORS(base_data_path, users_limit=100):
     """
     correct_rejections = 0
     total_attempts = 0
-    threshold = CFG.MATCH_THRESHOLD
+    threshold = CFG.MATCH_THRESHOLD + 0.01
 
     all_folders = sorted([f for f in os.listdir(base_data_path) if os.path.isdir(os.path.join(base_data_path, f))])
     
@@ -170,7 +170,6 @@ def run_evaluation_IMPOSTORS(base_data_path, users_limit=100):
 
 
 if __name__ == "__main__":
-    print(f"Próg dopasowania: {CFG.MATCH_THRESHOLD}\n")
-    run_evaluation_USERS(PATH.DATA_DIR)
-    print("\n" + "=" * 65 + "\n")
+    # run_evaluation_USERS(PATH.DATA_DIR)
+    # print("\n" + "=" * 65 + "\n")
     run_evaluation_IMPOSTORS(PATH.DATA_DIR)

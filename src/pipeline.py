@@ -32,10 +32,8 @@ def find_pupil_iris_boundaries(image):
 
 
 def normalize_iris(img, pupil_circle, iris_circle, height=None, width=None):
-    """
-    Normalizacja tęczówki (rubber sheet).
-    Zewnętrzna granica używa środka źrenicy — stabilniejsze między sesjami.
-    """
+    """Normalizacja tęczówki (rubber sheet)."""
+
     height = height or CFG.NORMALIZED_HEIGHT
     width = width or CFG.NORMALIZED_WIDTH
 

@@ -71,11 +71,11 @@ def debug_normalize(image_path):
     plt.show()
 
 
-for i in range(10):
-    file_name = f"002/L/S5002L0{i}.jpg"
-    debug_normalize(PATH.DATA_DIR / file_name)
+# for i in range(10):
+#     file_name = f"002/L/S5002L0{i}.jpg"
+#     debug_normalize(PATH.DATA_DIR / file_name)
     
-
-# debug_show_segmentation(PATH.DATA_DIR / file_name)
+file_name = f"000/L/S5000L00.jpg"
+debug_show_segmentation(PATH.DATA_DIR / file_name)
 # debug_load_and_preprocess(PATH.DATA_DIR / "002/L/S5002L05.jpg")
 # debug_find_pupil(PATH.DATA_DIR / "000/L/S5000L02.jpg")

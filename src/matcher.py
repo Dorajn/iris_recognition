@@ -3,13 +3,7 @@ import config as CFG
 
 
 def calculate_hamming_distance(code1, mask1, code2, mask2):
-    """
-    Odległość Hamminga na wszystkich bitach kodu (wszystkie orientacje Gabora).
-
-    UWAGA: Nie wolno brać minimum po orientacjach — jedna orientacja może
-    przypadkowo dać niski dystans między różnymi osobami i otwiera system
-    impostorom (fałszywa akceptacja masowa).
-    """
+    """Odległość Hamminga na wszystkich bitach kodu (wszystkie orientacje Gabora)."""
     combined_mask = np.logical_and(mask1, mask2)
     if np.sum(combined_mask) == 0:
         return 1.0

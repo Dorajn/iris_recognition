@@ -3,7 +3,11 @@ import numpy as np
 
 
 def find_pupil(image):
-    """Zwraca (x, y, r) źrenicy lub None."""
+    """
+    Zwraca (x, y, r) źrenicy lub None. 
+    Założenie, źrenica jest najciemniejszym, w miarę okrągłym obiektem na zdjęciu
+    """
+
     gray = _to_gray(image)
     h, w = gray.shape
 
@@ -12,22 +16,26 @@ def find_pupil(image):
     blurred = cv2.medianBlur(roi, 11)
     min_val = int(blurred.min())
 
+    # Próba na kilku progach dla lepszej skuteczności
     for thresh_margin in [25, 40, 60]:
         _, thresh = cv2.threshold(blurred, min_val + thresh_margin, 255, cv2.THRESH_BINARY_INV)
         kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (9, 9))
         closed = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel, iterations=3)
         opened = cv2.morphologyEx(closed, cv2.MORPH_OPEN,  kernel, iterations=1)
 
+        # Znajdujemy wszystkie koła
         contours, _ = cv2.findContours(opened, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
         candidates = []
+
+        # Wybieramy tylko koło o określonych parametrach
         for cnt in contours:
             area = cv2.contourArea(cnt)
-            if area < 500 or area > roi.size * 0.15:
+            if area < 500 or area > roi.size * 0.15: # Odrzucamy za małe i za duże koła
                 continue
             peri = cv2.arcLength(cnt, True)
             if peri == 0:
                 continue
-            circ = 4 * np.pi * area / (peri * peri)
+            circ = 4 * np.pi * area / (peri * peri) # Współczynnik okrągłości
             if circ > 0.55:
                 (x, y), r = cv2.minEnclosingCircle(cnt)
                 candidates.append((circ * area, x + m, y + m, r))
@@ -61,6 +69,7 @@ def find_iris(image, pupil_x, pupil_y, pupil_r):
     # Mocne rozmycie niszczy rzęsy i teksturę tęczówki
     smooth = cv2.GaussianBlur(gray, (0, 0), sigmaX=4.0)
 
+    # Tęczówka musi być blisko źrenicy
     r_min = int(pupil_r * 1.5)
     r_max = int(pupil_r * 4.5)
     if r_min >= r_max:
@@ -86,11 +95,8 @@ def find_iris(image, pupil_x, pupil_y, pupil_r):
         ds = np.convolve(deriv, k, mode='same') if len(deriv) >= 5 else deriv
         return int(r_vals[np.argmax(ds)])
 
-    # ── Etap 1: coarse ─────────────────────────────────────────
     iris_r_est = peak_radius(radial_profile(pupil_x, pupil_y))
 
-    # ── Etap 2: fine-search środka ─────────────────────────────
-    # Oceniamy gradient (out - in) przy iris_r_est, nie szukamy nowego peaka
     slack = 14
     r_window = np.arange(max(r_min, iris_r_est - 6), min(r_max - 1, iris_r_est + 7))
 
@@ -113,30 +119,9 @@ def find_iris(image, pupil_x, pupil_y, pupil_r):
                 best_score = score
                 best_cx, best_cy = cx, cy
 
-    # ── Etap 3: finalny promień z najlepszego centrum ──────────
     best_r = peak_radius(radial_profile(best_cx, best_cy))
 
     return best_cx, best_cy, best_r
-
-
-def find_iris_ray_casting(image, p_x, p_y, p_r):
-    return find_iris(image, p_x, p_y, p_r)
-
-
-def draw_result(image, pupil, iris):
-    """Rysuje wynik na obrazie do podglądu."""
-    gray = _to_gray(image)
-    vis = cv2.cvtColor(gray, cv2.COLOR_GRAY2BGR)
-    if pupil:
-        px, py, pr = pupil
-        cv2.circle(vis, (px, py), pr, (0, 220, 80), 2)
-        cv2.drawMarker(vis, (px, py), (0, 220, 80), cv2.MARKER_CROSS, 14, 2)
-    if iris:
-        ix, iy, ir = iris
-        cv2.circle(vis, (ix, iy), ir, (255, 100, 0), 2)
-        cv2.drawMarker(vis, (ix, iy), (255, 100, 0), cv2.MARKER_CROSS, 14, 2)
-    return vis
-
 
 def _to_gray(image):
     if image.ndim == 2:
