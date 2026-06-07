@@ -1,69 +1,69 @@
-# Rozpoznawanie tęczówki
+# Iris Recognition
 
-System biometryczny oparty na algorytmie Daugmana — segmentacja oka, normalizacja paska tęczówki, kodowanie filtrami Gabora i porównywanie odległością Hamminga z kompensacją rotacji.
+Biometric system based on Daugman's algorithm — eye segmentation, iris strip normalization, Gabor filter encoding, and Hamming distance matching with rotation compensation.
 
-## Wymagania
+## Requirements
 
 - Python 3.10+
 - OpenCV, NumPy, Matplotlib
-- Tkinter (interfejs graficzny, zwykle w standardowej instalacji Pythona)
+- Tkinter (GUI, usually included with a standard Python installation)
 
 ```bash
 pip install numpy opencv-python matplotlib
 ```
 
-## Dane
+## Data
 
-Umieść zdjęcia w katalogu `data/` w strukturze:
+Place images in the `data/` directory using the following structure:
 
 ```
 data/
 └── 001/
     └── L/
-        ├── S5001L01.jpg   # wzorzec (enrollment)
-        └── S5001L02.jpg   # weryfikacja
+        ├── S5001L01.jpg   # template (enrollment)
+        └── S5001L02.jpg   # verification
 ```
 
-Projekt jest przygotowany pod zbiór [CASIA Iris](http://www.cbsr.ia.ac.cn/english/IrisDatabase.asp) (format `S500XL0Y.jpg`).
+The project is designed for the [CASIA Iris](http://www.cbsr.ia.ac.cn/english/IrisDatabase.asp) dataset (`S500XL0Y.jpg` naming format).
 
-## Uruchomienie
+## Usage
 
-Wszystkie komendy uruchamiaj z katalogu `src/`:
+Run all commands from the `src/` directory:
 
 ```bash
 cd src
 ```
 
-| Skrypt | Opis |
-|--------|------|
-| `python enrollment.py` | Rejestracja użytkowników — buduje bazę w `memory-db/` |
-| `python verification.py` | Weryfikacja 1:N względem zapisanej bazy |
-| `python evaluation.py` | Ewaluacja w terminalu (legalni użytkownicy / impostorzy) |
-| `python app.py` | Interfejs graficzny z testami i wykresami metryk |
+| Script | Description |
+|--------|-------------|
+| `python enrollment.py` | User enrollment — builds the database in `memory-db/` |
+| `python verification.py` | 1:N verification against the stored database |
+| `python evaluation.py` | Terminal evaluation (genuine users / impostors) |
+| `python app.py` | Graphical interface with tests and metric plots |
 
 ## Pipeline
 
-1. **Segmentacja** — wykrycie źrenicy i tęczówki (`segmentation.py`)
-2. **Normalizacja** — model rubber sheet, pasek 64×512 px (`pipeline.py`)
-3. **Kodowanie** — 4 orientacje × 2 fazy Gabora → 8-bitowy kod (`pipeline.py`)
-4. **Dopasowanie** — odległość Hamminga z przesunięciem w poziomie (`matcher.py`)
+1. **Segmentation** — pupil and iris detection (`segmentation.py`)
+2. **Normalization** — rubber sheet model, 64×512 px strip (`pipeline.py`)
+3. **Encoding** — 4 orientations × 2 Gabor phases → 8-bit code (`pipeline.py`)
+4. **Matching** — Hamming distance with horizontal shift (`matcher.py`)
 
-Parametry (próg dopasowania, filtry Gabora itd.) w `config.py`.
+Parameters (match threshold, Gabor filters, etc.) are defined in `config.py`.
 
-## Struktura projektu
+## Project Structure
 
 ```
 src/
-├── pipeline.py          # główny pipeline przetwarzania
-├── segmentation.py      # wykrywanie źrenicy i tęczówki
-├── matcher.py           # porównywanie kodów
-├── enrollment.py        # rejestracja do bazy
-├── verification.py      # weryfikacja użytkownika
-├── evaluation.py        # ewaluacja (CLI)
+├── pipeline.py          # main processing pipeline
+├── segmentation.py      # pupil and iris detection
+├── matcher.py           # code comparison
+├── enrollment.py        # database enrollment
+├── verification.py      # user verification
+├── evaluation.py        # evaluation (CLI)
 ├── evaluation_with_visual.py
 ├── app.py               # GUI (Tkinter)
-└── config.py            # parametry systemu
+└── config.py            # system parameters
 
-memory-db/               # wygenerowane kody i mapa bazy
-data/                    # zdjęcia (nie w repozytorium)
+memory-db/               # generated codes and database map
+data/                    # images (not tracked in the repository)
 ```
